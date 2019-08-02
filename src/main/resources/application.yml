@@ -1,0 +1,5 @@
+spring:
+  activemq:
+    brokerUrl: tcp://localhost:61616?jms.redeliveryPolicy.maximumRedeliveries=3&jms.redeliveryPolicy.redeliveryDelay=2000
+    inMemory: false
+    pooled: true
