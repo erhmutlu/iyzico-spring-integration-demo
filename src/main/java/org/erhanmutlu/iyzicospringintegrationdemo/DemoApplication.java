@@ -23,6 +23,7 @@ public class DemoApplication {
         Basket basket = new Basket();
         basket.setBasketId(10L);
         basket.setPaymentId(1L);
+        basket.setConversationId("test");
         return (args) -> inputChannel.send(MessageBuilder.withPayload(basket).build());
     }
 }

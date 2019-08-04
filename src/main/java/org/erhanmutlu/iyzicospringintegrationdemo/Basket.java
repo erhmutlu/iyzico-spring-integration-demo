@@ -6,6 +6,7 @@ public class Basket implements Serializable {
 
     private Long basketId;
     private Long paymentId;
+    private String conversationId;
 
     public Long getBasketId() {
         return basketId;
@@ -21,5 +22,13 @@ public class Basket implements Serializable {
 
     public void setPaymentId(Long paymentId) {
         this.paymentId = paymentId;
+    }
+
+    public String getConversationId() {
+        return conversationId;
+    }
+
+    public void setConversationId(String conversationId) {
+        this.conversationId = conversationId;
     }
 }
